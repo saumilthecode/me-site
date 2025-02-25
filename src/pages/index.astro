@@ -1,11 +1,35 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
+<Layout title="skibidi toilet">
 	<Welcome />
+	<div class="button-container fade-transition show">
+		<a href="/projects">View Projects</a>
+	</div>
 </Layout>
+
+<style>
+	.button-container {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	.button-container a {
+		background: rgba(240, 240, 240, 0.1);
+		color: #f0f0f0;
+		padding: 0.8rem 1.5rem;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.button-container a:hover {
+		background: rgba(240, 240, 240, 0.2);
+		transform: translateY(-2px);
+	}
+</style>

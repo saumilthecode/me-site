@@ -1,0 +1,85 @@
+<div class="timeline">
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <h2>Grass - Grow Plants</h2>
+            <p>A personalized plant care companion app that helps keep your plants alive and thriving. Grass sends timely notifications for watering and fertilization, features colorful and intuitive dashboards, and makes plant care easier than ever.</p>
+            <p>Created under the 2022 Swift Accelerator Programme in collaboration with James Kuang Zhongchuan, Jeong Wonho & Loh Hao Yuan.</p>
+            <a href="https://apps.apple.com/us/app/grass-grow-plants/id6444735516" target="_blank" class="app-link">View on App Store</a>
+            <span class="date">March 2022 - Present</span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .timeline {
+        position: relative;
+        padding: 20px 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .timeline-content {
+        background: rgba(240, 240, 240, 0.1);
+        padding: 20px 30px;
+        border-radius: 8px;
+        position: relative;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: rgba(255, 255, 255, 0.2);
+        z-index: 0;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: 20px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-right: 20px;
+    }
+
+    .date {
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #a0a0a0;
+    }
+
+    .app-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: #00d4ff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .app-link:hover {
+        color: #ffffff;
+    }
+
+    h2 {
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #e0e0e0;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+</style>
